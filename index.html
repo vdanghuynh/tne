@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK-Vietnam TNE Partnership | Digital Twins & Next-Gen Wireless</title>
+    
+    <!-- SEO & Social Sharing Tags -->
+    <meta name="description" content="UK-Vietnam Partnership between Middlesex University and VNUHCM-UIT.">
+    <meta property="og:title" content="UK-Vietnam TNE Partnership">
+    <meta property="og:description" content="Advancing higher education capacity through international collaboration.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop">
+    <meta property="og:type" content="website">
+    
+    <!-- Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Theme Config based on UIT colours -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0b163f', // Deep UIT Navy
+                            light: '#152b66',
+                            lighter: '#203c8c'
+                        },
+                        gold: {
+                            DEFAULT: '#f3c025', // UIT Gold
+                            hover: '#d4a31a',
+                            light: '#fdf2d0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FIXED: Using specific UMD build for Lucide to prevent loading errors -->
+    <script src="https://unpkg.com/lucide@0.279.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(11, 22, 63, 0.88), rgba(11, 22, 63, 0.95)), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #0b163f; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f3c025; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-navy/95 backdrop-blur-sm shadow-md border-b border-navy-light text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i data-lucide="network" class="h-8 w-8 text-gold"></i>
+                    <span class="font-bold text-lg md:text-xl leading-tight text-white tracking-wide">
+                        UK-VN <span class="text-gold">Partnership</span>
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-slate-200 hover:text-gold font-medium transition">About</a>
+                    <a href="#objectives" class="text-slate-200 hover:text-gold font-medium transition">Objectives</a>
+                    <a href="#timeline" class="text-slate-200 hover:text-gold font-medium transition">Timeline</a>
+                    <a href="#partners" class="text-slate-200 hover:text-gold font-medium transition">Partners</a>
+                    <a href="#team" class="text-slate-200 hover:text-gold font-medium transition">Team</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-gold text-navy rounded-full font-bold hover:bg-gold-hover transition shadow-md">
+                        Get Involved
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-200 hover:text-gold focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy border-t border-navy-light">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="#about" class="block px-3 py-2 text-slate-200 font-medium">About</a>
+                <a href="#objectives" class="block px-3 py-2 text-slate-200 font-medium">Objectives</a>
+                <a href="#timeline" class="block px-3 py-2 text-slate-200 font-medium">Timeline</a>
+                <a href="#partners" class="block px-3 py-2 text-slate-200 font-medium">Partners</a>
+                <a href="#team" class="block px-3 py-2 text-slate-200 font-medium">Team</a>
+                <a href="#contact" class="block px-3 py-2 text-gold font-bold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative hero-bg h-screen min-h-[650px] flex items-center justify-center text-white pt-20">
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50 to-transparent"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-light/60 border border-gold/40 backdrop-blur-md mb-6 shadow-lg">
+                <span class="flex h-2.5 w-2.5 rounded-full bg-gold animate-pulse"></span>
+                <span class="text-sm font-bold text-gold tracking-wider uppercase">Going Global Partnerships 2026</span>
+            </div>
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight tracking-tight text-white drop-shadow-md">
+                UK-Vietnam TNE to Accelerate Research-Informed Teaching in <span class="text-gold">Digital Twins, Next-Generation Wireless, and Quantum Technologies</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-10 font-light max-w-3xl mx-auto">
+                Advancing higher education capacity through international collaboration.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                <a href="#about" class="px-8 py-3.5 bg-gold hover:bg-gold-hover text-navy rounded-lg font-bold transition shadow-lg shadow-gold/20 flex items-center justify-center gap-2 text-lg">
+                    Explore the Project <i data-lucide="arrow-down" class="h-5 w-5"></i>
+                </a>
+                <a href="#partners" class="px-8 py-3.5 bg-navy/40 hover:bg-navy/60 backdrop-blur-sm border border-gold/40 text-gold rounded-lg font-bold transition flex items-center justify-center gap-2 text-lg">
+                    Meet the Partners
+                </a>
+            </div>
+            
+            <div class="mt-16 flex flex-col items-center gap-3 opacity-95 hover:opacity-100 transition duration-500">
+                <p class="text-xs uppercase tracking-widest text-slate-300 mb-1">Funded By</p>
+                <div class="bg-white p-4 rounded-xl shadow-xl">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/BritishCouncil.png" alt="British Council" class="h-10 w-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2 drop-shadow-sm">Project Overview</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-navy mb-6">Bridging Frontier Research & Higher Education</h3>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    This project unites institutions in the UK and Vietnam to embed frontier research in <strong class="text-navy">Digital Twins, Next-Generation Wireless Networks, and Quantum Technologies</strong> into higher education curricula.
+                </p>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    By developing early-career lecturers' capacity and enhancing students' access to research-informed learning, we aim to strengthen institutional capability to deliver inclusive, internationally competitive ICT programmes aligned with Vietnam's strategic technological priorities.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                        <div class="bg-navy/5 p-2 rounded-lg text-navy">
+                            <i data-lucide="cpu" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy">Digital Twins</h4>
+                            <p class="text-sm text-slate-500">Infrastructure optimisation & sustainability.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                        <div class="bg-navy/5 p-2 rounded-lg text-navy">
+                            <i data-lucide="wifi" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy">Next-Gen Wireless</h4>
+                            <p class="text-sm text-slate-500">6G networks & IoT integration.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                        <div class="bg-navy/5 p-2 rounded-lg text-navy">
+                            <i data-lucide="atom" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy">Quantum Tech</h4>
+                            <p class="text-sm text-slate-500">Future-proofing computing curricula.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                        <div class="bg-navy/5 p-2 rounded-lg text-navy">
+                            <i data-lucide="graduation-cap" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy">Education</h4>
+                            <p class="text-sm text-slate-500">Research-to-teaching toolkit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-navy-light to-navy rounded-full blur-3xl opacity-20 z-0"></div>
+                <div class="relative z-10 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="bg-navy text-white p-6 rounded-2xl shadow-xl border-t-4 border-gold">
+                            <i data-lucide="book-open" class="h-8 w-8 text-gold mb-4"></i>
+                            <div class="text-4xl font-bold mb-1">5+</div>
+                            <div class="text-sm text-slate-300 font-medium">Joint Objectives</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-200">
+                            <i data-lucide="users" class="h-8 w-8 text-navy mb-4"></i>
+                            <div class="text-4xl font-bold text-navy mb-1">2</div>
+                            <div class="text-sm text-slate-500 font-medium">Leading Nations</div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 mt-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-200">
+                            <i data-lucide="calendar" class="h-8 w-8 text-navy mb-4"></i>
+                            <div class="text-4xl font-bold text-navy mb-1">18</div>
+                            <div class="text-sm text-slate-500 font-medium">Month Duration</div>
+                        </div>
+                        <div class="bg-gold text-navy p-6 rounded-2xl shadow-xl">
+                            <i data-lucide="globe" class="h-8 w-8 text-navy mb-4"></i>
+                            <div class="text-4xl font-bold mb-1">4</div>
+                            <div class="text-sm font-medium">Main SDGs Targeted</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Objectives Section -->
+    <section id="objectives" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Project Roadmap</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-navy mb-4">Key Project Objectives</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Our roadmap to integrating advanced research into practical education.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Objective 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border-t-4 border-navy group">
+                    <div class="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-navy transition-colors">
+                        <i data-lucide="layout-template" class="h-6 w-6 text-navy group-hover:text-gold transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Research-Informed Programmes</h3>
+                    <p class="text-slate-600">Jointly design pilot short courses on Vietnam's prioritised technologies, embedding frontier research on Digital Twins, IoT, and Cloud Computing.</p>
+                </div>
+
+                <!-- Objective 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border-t-4 border-navy group">
+                    <div class="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-navy transition-colors">
+                        <i data-lucide="git-merge" class="h-6 w-6 text-navy group-hover:text-gold transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Research-to-Teaching Integration</h3>
+                    <p class="text-slate-600">Develop proposals, convert findings into case studies, and co-supervise students in advanced ICT topics.</p>
+                </div>
+
+                <!-- Objective 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border-t-4 border-navy group">
+                    <div class="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-navy transition-colors">
+                        <i data-lucide="message-circle" class="h-6 w-6 text-navy group-hover:text-gold transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Knowledge Exchange</h3>
+                    <p class="text-slate-600">Host workshops and seminars to demonstrate research-to-teaching integration and present outputs at ICT conferences.</p>
+                </div>
+
+                <!-- Objective 4 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border-t-4 border-navy group">
+                    <div class="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-navy transition-colors">
+                        <i data-lucide="file-text" class="h-6 w-6 text-navy group-hover:text-gold transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Academic Outputs</h3>
+                    <p class="text-slate-600">Publish high-impact research and create a specialised 'Research-to-Teaching Toolkit' for lecturers.</p>
+                </div>
+
+                <!-- Objective 5 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border-t-4 border-navy group md:col-span-2 lg:col-span-1 md:col-start-1 lg:col-start-auto">
+                    <div class="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-navy transition-colors">
+                        <i data-lucide="briefcase" class="h-6 w-6 text-navy group-hover:text-gold transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Student Employability</h3>
+                    <p class="text-slate-600">Introduce online-placement opportunities with UK companies, enabling Vietnamese ICT students to gain international industry exposure.</p>
+                </div>
+                
+                <!-- SDG Card -->
+                 <div class="bg-gradient-to-br from-navy to-navy-light rounded-xl p-8 shadow-lg text-white flex flex-col justify-center border border-navy-lighter">
+                    <h3 class="text-xl font-bold mb-4 text-gold">Supporting SDGs</h3>
+                    <div class="grid grid-cols-5 gap-2">
+                        <div class="aspect-square bg-[#c5192d] rounded flex items-center justify-center font-bold text-xs" title="Quality Education">4</div>
+                        <div class="aspect-square bg-[#ff3a21] rounded flex items-center justify-center font-bold text-xs" title="Gender Equality">5</div>
+                        <div class="aspect-square bg-[#a21942] rounded flex items-center justify-center font-bold text-xs" title="Decent Work">8</div>
+                        <div class="aspect-square bg-[#fd6925] rounded flex items-center justify-center font-bold text-xs" title="Industry & Infrastructure">9</div>
+                        <div class="aspect-square bg-[#19486a] rounded flex items-center justify-center font-bold text-xs" title="Partnerships">17</div>
+                    </div>
+                    <p class="text-sm text-slate-300 mt-4 font-medium">Aligned with UN Sustainable Development Goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / Activities Section -->
+    <section id="timeline" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="text-center mb-16">
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Activities</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-navy">Project Timeline (2026-2027)</h3>
+            </div>
+
+            <div class="relative border-l-4 border-gold/30 ml-3 md:ml-6 space-y-12">
+                <!-- Activity 1 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
+                    <div>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Feb - May 2026</span>
+                        <h4 class="text-xl font-bold text-navy">Webinar Series on Emerging Tech</h4>
+                        <p class="text-slate-600 mt-2">6-hour series co-hosted by MDX and VNUHCM-UIT. Topics include Digital Twins, Next-Gen Wireless, and Quantum Computing. Targeted at students, early-career researchers, and industry.</p>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
+                    <div>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Summer 2026</span>
+                        <h4 class="text-xl font-bold text-navy">Partner Visits & Joint Planning</h4>
+                        <p class="text-slate-600 mt-2">Reciprocal visits to develop new taught programmes and draft research proposals. Includes visits to industrial partners.</p>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
+                    <div>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Jul - Sep 2026</span>
+                        <h4 class="text-xl font-bold text-navy">Pilot Joint Short Courses</h4>
+                        <p class="text-slate-600 mt-2">Co-designed short courses on Digital Twins, IoT, and 6G. Providing background on contemporary research and certification for students.</p>
+                    </div>
+                </div>
+
+                <!-- Activity 4 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
+                    <div>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Dec 2026</span>
+                        <h4 class="text-xl font-bold text-navy">Researcher Training</h4>
+                        <p class="text-slate-600 mt-2">Online training for PhD candidates and early-career researchers on research methods, publication skills, and grant writing.</p>
+                    </div>
+                </div>
+
+                <!-- Activity 5 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
+                    <div>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Early 2027</span>
+                        <h4 class="text-xl font-bold text-navy">Industry-Linked Online Placements</h4>
+                        <p class="text-slate-600 mt-2">Remote placements with UK companies in software development and data analytics to enhance student employability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Institutions</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-navy mb-4">Our Partners</h3>
+                <p class="text-lg text-slate-600">A strategic collaboration between leading UK and Vietnamese institutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- UK Partner -->
+                <div class="bg-white rounded-xl shadow-md p-8 text-center border-t-4 border-navy flex flex-col h-full hover:shadow-lg transition-shadow">
+                    <!-- Logo Container: Fixed height for alignment -->
+                    <div class="flex items-center justify-center mb-6 bg-navy rounded-lg h-48 px-6 w-full shadow-inner">
+                         <img src="https://pxl-mdxacuk.terminalfour.net/prod01/channel_3/media/middlesex-university/site-assets/images/logo.8c9a22fe.png" alt="Middlesex University" class="max-w-[90%] max-h-32 object-contain">
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-navy mb-2 min-h-[3.5rem] flex items-center justify-center">Middlesex University (UK)</h3>
+                        <p class="text-slate-500 text-sm font-semibold mb-4 min-h-[2.5rem] flex items-start justify-center uppercase tracking-wide">Faculty of Science and Technology</p>
+                        
+                        <p class="text-slate-600 mb-8 flex-grow">Home to the <a href="https://dt.mdx.ac.uk/" target="_blank" rel="noopener noreferrer" class="font-bold text-gold hover:underline">London Digital Twin Research Centre</a>. Leading expertise in digital twin modelling, infrastructure optimisation, and low-carbon operations.</p>
+                        
+                        <div class="mt-auto">
+                            <div class="inline-block bg-navy/5 rounded-xl px-6 py-3 w-full max-w-xs mx-auto border border-navy/10">
+                                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Lead Applicant</p>
+                                <p class="font-bold text-navy text-lg">Dr. Tuan Anh Le</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vietnam Partner -->
+                <div class="bg-white rounded-xl shadow-md p-8 text-center border-t-4 border-gold flex flex-col h-full hover:shadow-lg transition-shadow">
+                    <!-- Logo Container: Fixed height for alignment -->
+                    <div class="flex items-center justify-center mb-6 bg-navy rounded-lg h-48 px-6 w-full shadow-inner">
+                        <img src="https://www.uit.edu.vn/media/UIT_20_01_f687725dd2.png" alt="VNUHCM-UIT" class="max-w-[90%] max-h-32 object-contain">
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-navy mb-2 min-h-[3.5rem] flex items-center justify-center">VNUHCM - UIT (Vietnam)</h3>
+                        <p class="text-slate-500 text-sm font-semibold mb-4 min-h-[2.5rem] flex items-start justify-center uppercase tracking-wide">Faculty of Computer Networks and Communications</p>
+                        
+                        <p class="text-slate-600 mb-8 flex-grow">A leading centre for ICT education in Vietnam, dedicated to training a high-quality information technology (IT) workforce capable of contributing to the development of Vietnam's national IT industry.</p>
+                        
+                        <div class="mt-auto">
+                            <div class="inline-block bg-gold/10 rounded-xl px-6 py-3 w-full max-w-xs mx-auto border border-gold/20">
+                                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Lead Partner</p>
+                                <p class="font-bold text-navy text-lg">Dr. Dang Van Huynh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Project Team</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-navy mb-4">Meet the Experts</h3>
+                <p class="text-lg text-slate-600">Collaborating researchers leading the initiative from the UK and Vietnam.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                <!-- Team Member 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center text-gold mb-4 shadow-inner">
+                        <i data-lucide="user" class="h-10 w-10"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-navy">Prof. Huan Xuan Nguyen</h4>
+                    <p class="text-sm font-bold text-gold uppercase tracking-wide mt-1">Middlesex University</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center text-gold mb-4 shadow-inner">
+                        <i data-lucide="user" class="h-10 w-10"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-navy">Dr. Tuan Anh Le</h4>
+                    <p class="text-sm font-bold text-gold uppercase tracking-wide mt-1">Middlesex University</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center text-gold mb-4 shadow-inner">
+                        <i data-lucide="user" class="h-10 w-10"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-navy">Dr. Quoc-Tuan Vien</h4>
+                    <p class="text-sm font-bold text-gold uppercase tracking-wide mt-1">Middlesex University</p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow lg:col-start-1 lg:translate-x-1/2">
+                    <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center text-navy mb-4 shadow-inner">
+                        <i data-lucide="user" class="h-10 w-10"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-navy">Dr. Dang Van Huynh</h4>
+                    <p class="text-sm font-bold text-navy-light uppercase tracking-wide mt-1">VNUHCM-UIT</p>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow lg:translate-x-1/2">
+                    <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center text-navy mb-4 shadow-inner">
+                        <i data-lucide="user" class="h-10 w-10"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-navy">Dr. Quan Le-Trung</h4>
+                    <p class="text-sm font-bold text-navy-light uppercase tracking-wide mt-1">VNUHCM-UIT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact -->
+    <section id="contact" class="py-20 bg-navy text-white border-t-4 border-gold">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">Interested in Collaborating?</h2>
+            <p class="text-slate-300 mb-10 text-lg">
+                Whether you are an industry partner looking for talent, a researcher interested in Digital Twins, or a student wanting to join our short courses, we'd love to hear from you.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="mailto:t.le@mdx.ac.uk" class="flex items-center justify-center gap-2 px-8 py-4 bg-gold text-navy hover:bg-gold-hover rounded-xl font-bold transition shadow-lg">
+                    <i data-lucide="mail" class="h-5 w-5"></i> Contact Dr. Tuan Anh Le (UK)
+                </a>
+                <a href="mailto:danghv@uit.edu.vn" class="flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-gold text-gold hover:bg-gold/10 rounded-xl font-bold transition">
+                    <i data-lucide="mail" class="h-5 w-5"></i> Contact Dr. Dang Van Huynh (VN)
+                </a>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-navy-light grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-400">
+                <div class="text-left">
+                    <p>&copy; 2026 UK-Vietnam TNE Partnership.</p>
+                    <p>Supported by the British Council Going Global Partnerships.</p>
+                </div>
+                <div class="md:text-right flex flex-col md:items-end gap-2">
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-gold transition">Privacy Policy</a>
+                        <a href="#" class="hover:text-gold transition">Accessibility</a>
+                    </div>
+                    <p>Designed for academic collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Init Lucide Icons -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             if (typeof lucide !== 'undefined') {
+                 lucide.createIcons();
+             } else {
+                 console.warn("Lucide library not loaded.");
+             }
+        });
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
