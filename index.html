@@ -71,10 +71,11 @@
                         UK-VN <span class="text-gold">Partnership</span>
                     </span>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center">
+                <div class="hidden lg:flex space-x-6 items-center text-sm xl:text-base">
                     <a href="#about" class="text-slate-200 hover:text-gold font-medium transition">About</a>
                     <a href="#objectives" class="text-slate-200 hover:text-gold font-medium transition">Objectives</a>
                     <a href="#timeline" class="text-slate-200 hover:text-gold font-medium transition">Timeline</a>
+                    <a href="#webinars" class="text-gold font-bold transition flex items-center gap-1"><i data-lucide="video" class="h-4 w-4"></i> Webinars</a>
                     <a href="#partners" class="text-slate-200 hover:text-gold font-medium transition">Partners</a>
                     <a href="#team" class="text-slate-200 hover:text-gold font-medium transition">Team</a>
                     <a href="#contact" class="px-5 py-2.5 bg-gold text-navy rounded-full font-bold hover:bg-gold-hover transition shadow-md">
@@ -82,7 +83,7 @@
                     </a>
                 </div>
                 <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
+                <div class="lg:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-200 hover:text-gold focus:outline-none">
                         <i data-lucide="menu" class="h-6 w-6"></i>
                     </button>
@@ -90,11 +91,12 @@
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-navy border-t border-navy-light">
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy border-t border-navy-light">
             <div class="px-4 pt-2 pb-4 space-y-1">
                 <a href="#about" class="block px-3 py-2 text-slate-200 font-medium">About</a>
                 <a href="#objectives" class="block px-3 py-2 text-slate-200 font-medium">Objectives</a>
                 <a href="#timeline" class="block px-3 py-2 text-slate-200 font-medium">Timeline</a>
+                <a href="#webinars" class="block px-3 py-2 text-gold font-bold">Webinars</a>
                 <a href="#partners" class="block px-3 py-2 text-slate-200 font-medium">Partners</a>
                 <a href="#team" class="block px-3 py-2 text-slate-200 font-medium">Team</a>
                 <a href="#contact" class="block px-3 py-2 text-gold font-bold">Contact Us</a>
@@ -117,11 +119,11 @@
                 Advancing higher education capacity through international collaboration.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-5">
-                <a href="#about" class="px-8 py-3.5 bg-gold hover:bg-gold-hover text-navy rounded-lg font-bold transition shadow-lg shadow-gold/20 flex items-center justify-center gap-2 text-lg">
-                    Explore the Project <i data-lucide="arrow-down" class="h-5 w-5"></i>
+                <a href="#webinars" class="px-8 py-3.5 bg-gold hover:bg-gold-hover text-navy rounded-lg font-bold transition shadow-lg shadow-gold/20 flex items-center justify-center gap-2 text-lg">
+                    Join Upcoming Webinars <i data-lucide="video" class="h-5 w-5"></i>
                 </a>
-                <a href="#partners" class="px-8 py-3.5 bg-navy/40 hover:bg-navy/60 backdrop-blur-sm border border-gold/40 text-gold rounded-lg font-bold transition flex items-center justify-center gap-2 text-lg">
-                    Meet the Partners
+                <a href="#about" class="px-8 py-3.5 bg-navy/40 hover:bg-navy/60 backdrop-blur-sm border border-gold/40 text-gold rounded-lg font-bold transition flex items-center justify-center gap-2 text-lg">
+                    Explore the Project
                 </a>
             </div>
             
@@ -135,7 +137,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
                 <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2 drop-shadow-sm">Project Overview</h2>
@@ -190,11 +192,11 @@
                 <div class="absolute -inset-4 bg-gradient-to-r from-navy-light to-navy rounded-full blur-3xl opacity-20 z-0"></div>
                 <div class="relative z-10 grid grid-cols-2 gap-4">
                     <div class="space-y-4">
-                        <div class="bg-navy text-white p-6 rounded-2xl shadow-xl border-t-4 border-gold">
+                        <a href="#objectives" class="block bg-navy text-white p-6 rounded-2xl shadow-xl border-t-4 border-gold hover:-translate-y-1 transition-transform">
                             <i data-lucide="book-open" class="h-8 w-8 text-gold mb-4"></i>
                             <div class="text-4xl font-bold mb-1">5+</div>
                             <div class="text-sm text-slate-300 font-medium">Joint Objectives</div>
-                        </div>
+                        </a>
                         <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-200">
                             <i data-lucide="users" class="h-8 w-8 text-navy mb-4"></i>
                             <div class="text-4xl font-bold text-navy mb-1">2</div>
@@ -219,12 +221,12 @@
     </section>
 
     <!-- Key Objectives Section -->
-    <section id="objectives" class="py-20 bg-slate-100">
+    <section id="objectives" class="py-20 bg-slate-100 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Project Roadmap</h2>
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Project Vision</h2>
                 <h3 class="text-3xl md:text-4xl font-bold text-navy mb-4">Key Project Objectives</h3>
-                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Our roadmap to integrating advanced research into practical education.</p>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Our strategy for integrating advanced research into practical education.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -290,7 +292,7 @@
     </section>
 
     <!-- Timeline / Activities Section -->
-    <section id="timeline" class="py-20 bg-white">
+    <section id="timeline" class="py-20 bg-white scroll-mt-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
              <div class="text-center mb-16">
                 <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Activities</h2>
@@ -298,13 +300,16 @@
             </div>
 
             <div class="relative border-l-4 border-gold/30 ml-3 md:ml-6 space-y-12">
-                <!-- Activity 1 -->
+                <!-- Activity 1: Updated to link to webinars -->
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
                     <div>
-                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Feb - May 2026</span>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">May - June 2026</span>
                         <h4 class="text-xl font-bold text-navy">Webinar Series on Emerging Tech</h4>
-                        <p class="text-slate-600 mt-2">6-hour series co-hosted by MDX and VNUHCM-UIT. Topics include Digital Twins, Next-Gen Wireless, and Quantum Computing. Targeted at students, early-career researchers, and industry.</p>
+                        <p class="text-slate-600 mt-2 mb-3">6-hour series co-hosted by MDX and VNUHCM-UIT. Features cutting-edge talks on Quantum Cloud Computing (May 22) and 6G Integrated Sensing (June 16).</p>
+                        <a href="#webinars" class="inline-flex items-center text-sm font-bold text-navy hover:text-gold transition-colors">
+                            View Schedule & Register <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -351,8 +356,96 @@
         </div>
     </section>
 
+    <!-- NEW SECTION: Webinars -->
+    <section id="webinars" class="py-20 bg-navy text-white relative overflow-hidden scroll-mt-20">
+        <!-- Abstract background pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#f3c025 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Knowledge Exchange</h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4">Upcoming Webinar Series</h3>
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto">Join leading global experts as we delve into the practical deployment and future horizons of Quantum Technologies and 6G Wireless.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Webinar 1 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full text-slate-800 transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="bg-navy-lighter p-6 border-b-4 border-gold relative">
+                        <div class="absolute top-4 right-4 bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full shadow-sm">WEBINAR 1</div>
+                        <div class="flex items-center gap-2 text-gold-light font-semibold mb-2">
+                            <i data-lucide="calendar" class="h-4 w-4"></i> Friday, 22 May 2026
+                        </div>
+                        <div class="flex items-center gap-2 text-white text-sm mb-4">
+                            <i data-lucide="clock" class="h-4 w-4 text-gold"></i> 3:00 PM (Vietnam) | 9:00 AM (UK)
+                        </div>
+                        <h4 class="text-xl font-bold text-white leading-tight">Quantum Cloud Computing and Software Systems: Fundamentals, Practice and Experience.</h4>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-start gap-4 mb-6 pb-6 border-b border-slate-100">
+                            <div class="w-14 h-14 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-navy font-bold text-xl overflow-hidden">
+                                <i data-lucide="user" class="h-8 w-8 text-slate-400"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg text-navy">Dr. Hoa Nguyen</h5>
+                                <p class="text-sm text-slate-500 font-medium mb-1">Research Scientist, CSIRO, Australia</p>
+                                <a href="https://hoaio.com/" target="_blank" rel="noopener noreferrer" class="text-xs text-gold hover:text-gold-hover font-bold inline-flex items-center">
+                                    <i data-lucide="external-link" class="h-3 w-3 mr-1"></i> Author's Page
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow line-clamp-4">
+                            Quantum computing is moving toward practical use, yet heterogeneous, noisy intermediate-scale quantum (NISQ) hardware and fragmented software stacks still make application deployment and resource management challenging...
+                        </p>
+                        <div class="mt-auto pt-4 flex gap-3">
+                            <button data-modal-target="modal-webinar-1" class="flex-1 bg-navy/5 hover:bg-navy/10 text-navy border border-navy/20 py-2.5 rounded-lg font-bold text-sm transition-colors flex justify-center items-center gap-2 cursor-pointer">
+                                <i data-lucide="file-text" class="h-4 w-4"></i> Read Full Abstract & Bio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webinar 2 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full text-slate-800 transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="bg-navy-lighter p-6 border-b-4 border-gold relative">
+                        <div class="absolute top-4 right-4 bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full shadow-sm">WEBINAR 2</div>
+                        <div class="flex items-center gap-2 text-gold-light font-semibold mb-2">
+                            <i data-lucide="calendar" class="h-4 w-4"></i> Tuesday, 16 June 2026
+                        </div>
+                        <div class="flex items-center gap-2 text-white text-sm mb-4">
+                            <i data-lucide="clock" class="h-4 w-4 text-gold"></i> 3:00 PM (Vietnam) | 9:00 AM (UK)
+                        </div>
+                        <h4 class="text-xl font-bold text-white leading-tight">Integrated and Intelligent Connectivity for 6G and Beyond: Role of ISAC and Intelligent Metasurfaces</h4>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-start gap-4 mb-6 pb-6 border-b border-slate-100">
+                            <div class="w-14 h-14 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-navy font-bold text-xl overflow-hidden">
+                                <i data-lucide="user" class="h-8 w-8 text-slate-400"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg text-navy">Prof. Aryan Kaushik</h5>
+                                <p class="text-sm text-slate-500 font-medium mb-1">CEO at OUF Innovative, UK</p>
+                                <a href="https://sites.google.com/view/aryankaushik" target="_blank" rel="noopener noreferrer" class="text-xs text-gold hover:text-gold-hover font-bold inline-flex items-center">
+                                    <i data-lucide="external-link" class="h-3 w-3 mr-1"></i> Author's Page
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow line-clamp-4">
+                            Following the IMT-2030 framework by ITU-R, two major technologies of integrated sensing and communications (ISAC) and intelligent metasurfaces (IM), i.e., RIS, holographic MIMO (H-MIMO), herald a new era of 6G connectivity...
+                        </p>
+                        <div class="mt-auto pt-4 flex gap-3">
+                            <button data-modal-target="modal-webinar-2" class="flex-1 bg-navy/5 hover:bg-navy/10 text-navy border border-navy/20 py-2.5 rounded-lg font-bold text-sm transition-colors flex justify-center items-center gap-2 cursor-pointer">
+                                <i data-lucide="file-text" class="h-4 w-4"></i> Read Full Abstract & Bio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Partners Section -->
-    <section id="partners" class="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="partners" class="py-20 bg-slate-50 border-t border-slate-200 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Institutions</h2>
@@ -363,17 +456,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- UK Partner -->
                 <div class="bg-white rounded-xl shadow-md p-8 text-center border-t-4 border-navy flex flex-col h-full hover:shadow-lg transition-shadow">
-                    <!-- Logo Container: Fixed height for alignment -->
                     <div class="flex items-center justify-center mb-6 bg-navy rounded-lg h-48 px-6 w-full shadow-inner">
                          <img src="https://pxl-mdxacuk.terminalfour.net/prod01/channel_3/media/middlesex-university/site-assets/images/logo.8c9a22fe.png" alt="Middlesex University" class="max-w-[90%] max-h-32 object-contain">
                     </div>
-                    
                     <div class="flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-navy mb-2 min-h-[3.5rem] flex items-center justify-center">Middlesex University (UK)</h3>
                         <p class="text-slate-500 text-sm font-semibold mb-4 min-h-[2.5rem] flex items-start justify-center uppercase tracking-wide">Faculty of Science and Technology</p>
-                        
                         <p class="text-slate-600 mb-8 flex-grow">Home to the <a href="https://dt.mdx.ac.uk/" target="_blank" rel="noopener noreferrer" class="font-bold text-gold hover:underline">London Digital Twin Research Centre</a>. Leading expertise in digital twin modelling, infrastructure optimisation, and low-carbon operations.</p>
-                        
                         <div class="mt-auto">
                             <div class="inline-block bg-navy/5 rounded-xl px-6 py-3 w-full max-w-xs mx-auto border border-navy/10">
                                 <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Lead Applicant</p>
@@ -385,17 +474,13 @@
 
                 <!-- Vietnam Partner -->
                 <div class="bg-white rounded-xl shadow-md p-8 text-center border-t-4 border-gold flex flex-col h-full hover:shadow-lg transition-shadow">
-                    <!-- Logo Container: Fixed height for alignment -->
                     <div class="flex items-center justify-center mb-6 bg-navy rounded-lg h-48 px-6 w-full shadow-inner">
                         <img src="https://www.uit.edu.vn/media/UIT_20_01_f687725dd2.png" alt="VNUHCM-UIT" class="max-w-[90%] max-h-32 object-contain">
                     </div>
-                    
                     <div class="flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-navy mb-2 min-h-[3.5rem] flex items-center justify-center">VNUHCM - UIT (Vietnam)</h3>
                         <p class="text-slate-500 text-sm font-semibold mb-4 min-h-[2.5rem] flex items-start justify-center uppercase tracking-wide">Faculty of Computer Networks and Communications</p>
-                        
                         <p class="text-slate-600 mb-8 flex-grow">A leading centre for ICT education in Vietnam, dedicated to training a high-quality information technology (IT) workforce capable of contributing to the development of Vietnam's national IT industry.</p>
-                        
                         <div class="mt-auto">
                             <div class="inline-block bg-gold/10 rounded-xl px-6 py-3 w-full max-w-xs mx-auto border border-gold/20">
                                 <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Lead Partner</p>
@@ -409,7 +494,7 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="py-20 bg-white border-t border-slate-200">
+    <section id="team" class="py-20 bg-white border-t border-slate-200 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Project Team</h2>
@@ -418,7 +503,6 @@
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-                <!-- Team Member 1 -->
                 <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
                     <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center text-gold mb-4 shadow-inner">
                         <i data-lucide="user" class="h-10 w-10"></i>
@@ -426,8 +510,6 @@
                     <h4 class="text-lg font-bold text-navy">Prof. Huan Xuan Nguyen</h4>
                     <p class="text-sm font-bold text-gold uppercase tracking-wide mt-1">Middlesex University</p>
                 </div>
-
-                <!-- Team Member 2 -->
                 <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
                     <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center text-gold mb-4 shadow-inner">
                         <i data-lucide="user" class="h-10 w-10"></i>
@@ -435,8 +517,6 @@
                     <h4 class="text-lg font-bold text-navy">Dr. Tuan Anh Le</h4>
                     <p class="text-sm font-bold text-gold uppercase tracking-wide mt-1">Middlesex University</p>
                 </div>
-
-                <!-- Team Member 3 -->
                 <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
                     <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center text-gold mb-4 shadow-inner">
                         <i data-lucide="user" class="h-10 w-10"></i>
@@ -444,8 +524,6 @@
                     <h4 class="text-lg font-bold text-navy">Dr. Quoc-Tuan Vien</h4>
                     <p class="text-sm font-bold text-gold uppercase tracking-wide mt-1">Middlesex University</p>
                 </div>
-
-                <!-- Team Member 4 -->
                 <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow lg:col-start-1 lg:translate-x-1/2">
                     <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center text-navy mb-4 shadow-inner">
                         <i data-lucide="user" class="h-10 w-10"></i>
@@ -453,13 +531,11 @@
                     <h4 class="text-lg font-bold text-navy">Dr. Dang Van Huynh</h4>
                     <p class="text-sm font-bold text-navy-light uppercase tracking-wide mt-1">VNUHCM-UIT</p>
                 </div>
-
-                <!-- Team Member 5 -->
                 <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow lg:translate-x-1/2">
                     <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center text-navy mb-4 shadow-inner">
                         <i data-lucide="user" class="h-10 w-10"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-navy">Assoc. Prof. Quan Le-Trung</h4>
+                    <h4 class="text-lg font-bold text-navy">Dr. Quan Le-Trung</h4>
                     <p class="text-sm font-bold text-navy-light uppercase tracking-wide mt-1">VNUHCM-UIT</p>
                 </div>
             </div>
@@ -467,7 +543,7 @@
     </section>
 
     <!-- Call to Action / Contact -->
-    <section id="contact" class="py-20 bg-navy text-white border-t-4 border-gold">
+    <section id="contact" class="py-20 bg-navy text-white border-t-4 border-gold scroll-mt-20">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6 text-white">Interested in Collaborating?</h2>
             <p class="text-slate-300 mb-10 text-lg">
@@ -498,25 +574,181 @@
         </div>
     </section>
 
-    <!-- Init Lucide Icons -->
+    <!-- MODALS for Webinars -->
+    <!-- Webinar 1 Modal -->
+    <div id="modal-webinar-1" class="modal-overlay fixed inset-0 z-[100] hidden items-center justify-center bg-navy/80 backdrop-blur-sm p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative shadow-2xl" onclick="event.stopPropagation();">
+            <!-- Header -->
+            <div class="sticky top-0 bg-white z-10 p-6 border-b border-slate-100 flex justify-between items-start">
+                <div class="pr-8">
+                    <div class="flex items-center gap-2 text-navy mb-2 text-sm font-bold bg-gold/20 inline-block px-3 py-1 rounded-full">
+                        <i data-lucide="calendar" class="h-4 w-4 inline"></i> May 22, 2026
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy leading-tight">Quantum Cloud Computing and Software Systems: Fundamentals, Practice and Experience.</h3>
+                </div>
+                <button data-modal-close="modal-webinar-1" class="p-2 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-600 transition-colors flex-shrink-0 cursor-pointer">
+                    <i data-lucide="x" class="h-5 w-5 pointer-events-none"></i>
+                </button>
+            </div>
+            <!-- Body -->
+            <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="font-bold text-navy text-lg mb-3 flex items-center gap-2 border-b-2 border-gold pb-2 inline-flex">
+                            <i data-lucide="file-text" class="h-5 w-5 text-gold"></i> Abstract
+                        </h4>
+                        <p class="text-slate-700 leading-relaxed text-sm">
+                            Quantum computing is moving toward practical use, yet heterogeneous, noisy intermediate-scale quantum (NISQ) hardware and fragmented software stacks still make application deployment and resource management challenging. This webinar has two goals: first, to provide a brief overview of quantum computing fundamentals, including qubits, gates, circuits, quantum cloud computing, and current constraints; second, to share practical experience with software systems and frameworks for modelling, simulation, and deploying applications in quantum computing environments, with a focus on quantum software workflows and optimising quantum resource management. We will conclude by outlining open problems and future directions for scalable quantum cloud and software systems, resource orchestration, and distributed execution, and by sharing insights from quantum initiatives in Australia.
+                        </p>
+                    </div>
+                </div>
+                <!-- Speaker Info Sidebar -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 h-fit">
+                    <h4 class="font-bold text-navy mb-4 border-b-2 border-gold pb-2 inline-block">Speaker Profile</h4>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white">
+                            <i data-lucide="user" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-navy">Dr. Hoa Nguyen</p>
+                            <p class="text-xs text-slate-500 font-semibold">CSIRO, Australia</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                        Dr Hoa Nguyen is a Research Scientist in the Quantum Systems Team at CSIRO, Australia’s national science agency. His expertise lies at the intersection of quantum computing, artificial intelligence, and cloud computing, with research interests in quantum software engineering, quantum machine learning applications, and AI-driven optimisation for resource orchestration in distributed quantum computing systems. Hoa is developing quantum software systems for the National Quantum Computing Testbed (NQCT) in collaboration with the University of Queensland and quantum industry partners. He completed his PhD at the University of Melbourne, focusing on serverless and reinforcement learning-based resource management for quantum cloud computing, and holds bachelor's and master's degrees from the University of Information Technology, Vietnam National University (UIT-HCM). He has over eight years of teaching experience in Vietnam and Australia, and he works with national and international partners to advance scalable quantum computing architectures and software systems that support Australia’s growing quantum ecosystem.
+                    </p>
+                    <a href="https://hoaio.com/" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gold text-navy font-bold py-2 rounded-lg text-sm hover:bg-gold-hover transition">
+                        Visit Author's Page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Webinar 2 Modal -->
+    <div id="modal-webinar-2" class="modal-overlay fixed inset-0 z-[100] hidden items-center justify-center bg-navy/80 backdrop-blur-sm p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative shadow-2xl" onclick="event.stopPropagation();">
+            <!-- Header -->
+            <div class="sticky top-0 bg-white z-10 p-6 border-b border-slate-100 flex justify-between items-start">
+                <div class="pr-8">
+                    <div class="flex items-center gap-2 text-navy mb-2 text-sm font-bold bg-gold/20 inline-block px-3 py-1 rounded-full">
+                        <i data-lucide="calendar" class="h-4 w-4 inline"></i> June 16, 2026
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy leading-tight">Integrated and Intelligent Connectivity for 6G and Beyond: Role of ISAC and Intelligent Metasurfaces</h3>
+                </div>
+                <button data-modal-close="modal-webinar-2" class="p-2 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-600 transition-colors flex-shrink-0 cursor-pointer">
+                    <i data-lucide="x" class="h-5 w-5 pointer-events-none"></i>
+                </button>
+            </div>
+            <!-- Body -->
+            <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="font-bold text-navy text-lg mb-3 flex items-center gap-2 border-b-2 border-gold pb-2 inline-flex">
+                            <i data-lucide="file-text" class="h-5 w-5 text-gold"></i> Abstract
+                        </h4>
+                        <p class="text-slate-700 leading-relaxed text-sm space-y-3">
+                            <span>Following the IMT-2030 framework by ITU-R, two major technologies of integrated sensing and communications (ISAC) and intelligent metasurfaces (IM), i.e., RIS, holographic MIMO (H-MIMO), herald a new era of 6G connectivity by transcending conventional communication networks to highly energy efficient and ultra-high data rates for smart radio environment, with exploration of frequency bands such as cmWave and sub-terahertz, and multiple use cases for 6G such as simultaneous imaging, mapping and localization, smart healthcare, etc.</span>
+                            <br><br>
+                            <span>Furthermore, considering recent 3GPP Rels. 19 and 20, ISAC will play a vital role in 6G wireless standards, while RIS, H-MIMO, electromagnetic signal and information theory (ESIT) are some of the technologies expected in future 3GPP Rel. 20+. This talk will present a comprehensive overview of emerging ISAC and IM (particularly RIS, H-MIMO, refractive surfaces) based 6G and beyond wireless communications including vision, standardization, fundamentals, challenges, use cases, and synergies between ISAC and IM technologies, and new opportunities.</span>
+                            <br><br>
+                            <span>In terms of emerging designs, this talk will focus on case studies such as RF chain and quantization optimization, ESIT capabilities, index modulation, and IM-aided ISAC for non-terrestrial networks (NTN), and related applications.</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Speaker Info Sidebar -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 h-fit">
+                    <h4 class="font-bold text-navy mb-4 border-b-2 border-gold pb-2 inline-block">Speaker Profile</h4>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white">
+                            <i data-lucide="user" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-navy">Prof. Aryan Kaushik</p>
+                            <p class="text-xs text-slate-500 font-semibold">CEO at OUF Innovative, UK</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-600 text-xs leading-relaxed mb-4 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
+                        Prof. Aryan Kaushik is CEO at OUF Innovative, UK, since 2026, CIO at RakFort, Ireland, and Adjunct Professor at IIITD, India, since 2025. He has been an Associate Professor at Manchester Met, UK, from 2024-25, Assistant Professor (Senior Grade) at the University of Sussex, UK (2021- 24), Research Fellow at UCL, UK (2020-21), and also associated with University of Edinburgh, UK (2015-19), HKUST, HK (2014-15). He has held Visiting Professor/Researcher appointments at University of Bologna, Italy (2024), Imperial College London, UK (2019-20), etc. He has been External Assessor (Academic Promotion) at University of Hertfordshire, UK (2025), External PhD Examiner internationally such as at the KTH, Sweden (2025), UC3M, Spain (2023), etc. He has been World’s Top 2% Scientist (Stanford/Elsevier), Invited Panel Member at the UK EPSRC ICT Prioritisation Panel in 2023, UK EPSRC Proposals Reviewer since 2023, French ANR Proposal Reviewer in 2025, Core Member of IEEE P1955 Standard on 6G-Empowering Robotics, Chair of IEEE ComSoc TWG on ESIT and SIG on AITNTN, Vice Chair of one6G WG3, Industry Chair of IEEE TWG on BNC, Founding Member of IEEE ComSoc SIG on FAS, and Elections/Selection Committee Member for IEEE ComSoc. He has been Editor of 5 books by Elsevier and Wiley, and several journals such as IEEE Transactions on Communications, IEEE Transactions on Mobile Computing (Exemplary Editor 2025), IEEE COMST, IEEE COMML (Exemplary Editor 2025, 2024 and 2023), IEEE OJCOMS (Exemplary Editor 2024 and 2023), IEEE IoTM (Exemplary Editor 2024), etc. He has been invited/keynote and tutorial speaker for 140+ academic and industry events, and conferences globally such as IEEE ICC 2024-26, IEEE GLOBECOM 2023-26, etc., chairing in 15+ flagship conferences such as IEEE ICC 2024-26, IEEE GLOBECOM 2026 etc., and has been General Chair of 40+ workshops/special sessions such as at IEEE ICC 2024-26, IEEE GLOBECOM 2023-26, etc.
+                    </div>
+                    <a href="https://sites.google.com/view/aryankaushik" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gold text-navy font-bold py-2 rounded-lg text-sm hover:bg-gold-hover transition mt-2">
+                        Visit Author's Page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+             // Initialize Icons
              if (typeof lucide !== 'undefined') {
                  lucide.createIcons();
              } else {
                  console.warn("Lucide library not loaded.");
              }
+
+             // Mobile Menu Toggle
+             const btn = document.getElementById('mobile-menu-btn');
+             const menu = document.getElementById('mobile-menu');
+
+             if(btn && menu) {
+                 btn.addEventListener('click', () => {
+                     menu.classList.toggle('hidden');
+                 });
+                 // Close mobile menu when a link is clicked
+                 const mobileLinks = menu.querySelectorAll('a');
+                 mobileLinks.forEach(link => {
+                     link.addEventListener('click', () => {
+                         menu.classList.add('hidden');
+                     });
+                 });
+             }
+
+             // Modal Logic (Re-written for Better Reliability)
+             const openModalBtns = document.querySelectorAll('[data-modal-target]');
+             const closeModalBtns = document.querySelectorAll('[data-modal-close]');
+             const modals = document.querySelectorAll('.modal-overlay');
+
+             openModalBtns.forEach(btn => {
+                 btn.addEventListener('click', (e) => {
+                     e.preventDefault();
+                     const targetId = btn.getAttribute('data-modal-target');
+                     const modal = document.getElementById(targetId);
+                     if(modal) {
+                         modal.classList.remove('hidden');
+                         modal.classList.add('flex');
+                         document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                     }
+                 });
+             });
+
+             closeModalBtns.forEach(btn => {
+                 btn.addEventListener('click', (e) => {
+                     e.preventDefault();
+                     const targetId = btn.getAttribute('data-modal-close');
+                     const modal = document.getElementById(targetId);
+                     if(modal) {
+                         modal.classList.add('hidden');
+                         modal.classList.remove('flex');
+                         document.body.style.overflow = ''; // Restore background scrolling
+                     }
+                 });
+             });
+
+             // Close modal when clicking outside the modal content (on the overlay background)
+             modals.forEach(modal => {
+                 modal.addEventListener('click', (e) => {
+                     // Check if the click was directly on the modal background overlay, not its children
+                     if (e.target === modal) {
+                         modal.classList.add('hidden');
+                         modal.classList.remove('flex');
+                         document.body.style.overflow = '';
+                     }
+                 });
+             });
         });
-
-        // Mobile Menu Toggle
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        }
     </script>
 </body>
 </html>
