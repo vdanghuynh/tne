@@ -57,6 +57,12 @@
         ::-webkit-scrollbar-track { background: #f1f5f9; }
         ::-webkit-scrollbar-thumb { background: #0b163f; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #f3c025; }
+
+        /* Custom Scrollbar for inner modal text */
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -304,9 +310,9 @@
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
                     <div>
-                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">May - June 2026</span>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">May - July 2026</span>
                         <h4 class="text-xl font-bold text-navy">Webinar Series on Emerging Tech</h4>
-                        <p class="text-slate-600 mt-2 mb-3">6-hour series co-hosted by MDX and VNUHCM-UIT. Features cutting-edge talks on Quantum Cloud Computing (May 22) and 6G Integrated Sensing (June 16).</p>
+                        <p class="text-slate-600 mt-2 mb-3">Series co-hosted by MDX and VNUHCM-UIT. Features cutting-edge talks on Quantum Cloud Computing (May 22), 6G Integrated Sensing (June 16), and Digital Twins & AI for 6G (July 20).</p>
                         <a href="#webinars" class="inline-flex items-center text-sm font-bold text-navy hover:text-gold transition-colors">
                             View Schedule & Register <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
                         </a>
@@ -317,7 +323,7 @@
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute -left-[11px] md:-left-[14px] top-1 h-6 w-6 md:h-7 md:w-7 rounded-full bg-navy border-4 border-white shadow-sm"></div>
                     <div>
-                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Summer 2026</span>
+                        <span class="inline-block px-4 py-1 bg-gold-light text-navy rounded-full text-xs font-bold mb-2">Fall 2026</span>
                         <h4 class="text-xl font-bold text-navy">Partner Visits & Joint Planning</h4>
                         <p class="text-slate-600 mt-2">Reciprocal visits to develop new taught programmes and draft research proposals. Includes visits to industrial partners.</p>
                     </div>
@@ -368,38 +374,35 @@
                 <p class="text-lg text-slate-300 max-w-2xl mx-auto">Join leading global experts as we delve into the practical deployment and future horizons of Quantum Technologies and 6G Wireless.</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <!-- Webinar 1 -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full text-slate-800 transform hover:-translate-y-1 transition-transform duration-300">
                     <div class="bg-navy-lighter p-6 border-b-4 border-gold relative">
                         <div class="absolute top-4 right-4 bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full shadow-sm">WEBINAR 1</div>
-                        <div class="flex items-center gap-2 text-gold-light font-semibold mb-2">
+                        <div class="flex items-center gap-2 text-gold-light font-semibold mb-2 text-sm">
                             <i data-lucide="calendar" class="h-4 w-4"></i> Friday, 22 May 2026
                         </div>
-                        <div class="flex items-center gap-2 text-white text-sm mb-4">
-                            <i data-lucide="clock" class="h-4 w-4 text-gold"></i> 3:00 PM (Vietnam) | 9:00 AM (UK)
+                        <div class="flex items-center gap-2 text-white text-xs mb-4">
+                            <i data-lucide="clock" class="h-4 w-4 text-gold"></i> 3:00 PM (VN) | 9:00 AM (UK)
                         </div>
-                        <h4 class="text-xl font-bold text-white leading-tight">Quantum Cloud Computing and Software Systems: Fundamentals, Practice and Experience.</h4>
+                        <h4 class="text-lg font-bold text-white leading-tight">Quantum Cloud Computing and Software Systems: Fundamentals, Practice and Experience.</h4>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-start gap-4 mb-6 pb-6 border-b border-slate-100">
-                            <div class="w-14 h-14 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-navy font-bold text-xl overflow-hidden">
-                                <i data-lucide="user" class="h-8 w-8 text-slate-400"></i>
+                            <div class="w-12 h-12 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-navy font-bold text-xl overflow-hidden">
+                                <i data-lucide="user" class="h-6 w-6 text-slate-400"></i>
                             </div>
                             <div>
-                                <h5 class="font-bold text-lg text-navy">Dr. Hoa Nguyen</h5>
-                                <p class="text-sm text-slate-500 font-medium mb-1">Research Scientist, CSIRO, Australia</p>
-                                <a href="https://hoaio.com/" target="_blank" rel="noopener noreferrer" class="text-xs text-gold hover:text-gold-hover font-bold inline-flex items-center">
-                                    <i data-lucide="external-link" class="h-3 w-3 mr-1"></i> Author's Page
-                                </a>
+                                <h5 class="font-bold text-base text-navy">Dr. Hoa Nguyen</h5>
+                                <p class="text-xs text-slate-500 font-medium mb-1">Research Scientist, CSIRO</p>
                             </div>
                         </div>
-                        <p class="text-slate-600 text-sm mb-6 flex-grow line-clamp-4">
+                        <p class="text-slate-600 text-xs mb-6 flex-grow line-clamp-4">
                             Quantum computing is moving toward practical use, yet heterogeneous, noisy intermediate-scale quantum (NISQ) hardware and fragmented software stacks still make application deployment and resource management challenging...
                         </p>
                         <div class="mt-auto pt-4 flex gap-3">
-                            <button data-modal-target="modal-webinar-1" class="flex-1 bg-navy/5 hover:bg-navy/10 text-navy border border-navy/20 py-2.5 rounded-lg font-bold text-sm transition-colors flex justify-center items-center gap-2 cursor-pointer">
-                                <i data-lucide="file-text" class="h-4 w-4"></i> Read Full Abstract & Bio
+                            <button data-modal-target="modal-webinar-1" class="flex-1 bg-navy/5 hover:bg-navy/10 text-navy border border-navy/20 py-2.5 rounded-lg font-bold text-xs transition-colors flex justify-center items-center gap-2 cursor-pointer">
+                                <i data-lucide="file-text" class="h-4 w-4"></i> Read More
                             </button>
                         </div>
                     </div>
@@ -409,33 +412,63 @@
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full text-slate-800 transform hover:-translate-y-1 transition-transform duration-300">
                     <div class="bg-navy-lighter p-6 border-b-4 border-gold relative">
                         <div class="absolute top-4 right-4 bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full shadow-sm">WEBINAR 2</div>
-                        <div class="flex items-center gap-2 text-gold-light font-semibold mb-2">
+                        <div class="flex items-center gap-2 text-gold-light font-semibold mb-2 text-sm">
                             <i data-lucide="calendar" class="h-4 w-4"></i> Tuesday, 16 June 2026
                         </div>
-                        <div class="flex items-center gap-2 text-white text-sm mb-4">
-                            <i data-lucide="clock" class="h-4 w-4 text-gold"></i> 3:00 PM (Vietnam) | 9:00 AM (UK)
+                        <div class="flex items-center gap-2 text-white text-xs mb-4">
+                            <i data-lucide="clock" class="h-4 w-4 text-gold"></i> 3:00 PM (VN) | 9:00 AM (UK)
                         </div>
-                        <h4 class="text-xl font-bold text-white leading-tight">Integrated and Intelligent Connectivity for 6G and Beyond: Role of ISAC and Intelligent Metasurfaces</h4>
+                        <h4 class="text-lg font-bold text-white leading-tight">Integrated and Intelligent Connectivity for 6G and Beyond: Role of ISAC and IM</h4>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-start gap-4 mb-6 pb-6 border-b border-slate-100">
-                            <div class="w-14 h-14 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-navy font-bold text-xl overflow-hidden">
-                                <i data-lucide="user" class="h-8 w-8 text-slate-400"></i>
+                            <div class="w-12 h-12 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-navy font-bold text-xl overflow-hidden">
+                                <i data-lucide="user" class="h-6 w-6 text-slate-400"></i>
                             </div>
                             <div>
-                                <h5 class="font-bold text-lg text-navy">Prof. Aryan Kaushik</h5>
-                                <p class="text-sm text-slate-500 font-medium mb-1">CEO at OUF Innovative, UK</p>
-                                <a href="https://sites.google.com/view/aryankaushik" target="_blank" rel="noopener noreferrer" class="text-xs text-gold hover:text-gold-hover font-bold inline-flex items-center">
-                                    <i data-lucide="external-link" class="h-3 w-3 mr-1"></i> Author's Page
-                                </a>
+                                <h5 class="font-bold text-base text-navy">Prof. Aryan Kaushik</h5>
+                                <p class="text-xs text-slate-500 font-medium mb-1">CEO at OUF Innovative, UK</p>
                             </div>
                         </div>
-                        <p class="text-slate-600 text-sm mb-6 flex-grow line-clamp-4">
-                            Following the IMT-2030 framework by ITU-R, two major technologies of integrated sensing and communications (ISAC) and intelligent metasurfaces (IM), i.e., RIS, holographic MIMO (H-MIMO), herald a new era of 6G connectivity...
+                        <p class="text-slate-600 text-xs mb-6 flex-grow line-clamp-4">
+                            Following the IMT-2030 framework by ITU-R, two major technologies of integrated sensing and communications (ISAC) and intelligent metasurfaces (IM) herald a new era of 6G connectivity...
                         </p>
                         <div class="mt-auto pt-4 flex gap-3">
-                            <button data-modal-target="modal-webinar-2" class="flex-1 bg-navy/5 hover:bg-navy/10 text-navy border border-navy/20 py-2.5 rounded-lg font-bold text-sm transition-colors flex justify-center items-center gap-2 cursor-pointer">
-                                <i data-lucide="file-text" class="h-4 w-4"></i> Read Full Abstract & Bio
+                            <button data-modal-target="modal-webinar-2" class="flex-1 bg-navy/5 hover:bg-navy/10 text-navy border border-navy/20 py-2.5 rounded-lg font-bold text-xs transition-colors flex justify-center items-center gap-2 cursor-pointer">
+                                <i data-lucide="file-text" class="h-4 w-4"></i> Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Webinar 3 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full text-slate-800 transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="bg-navy-lighter p-6 border-b-4 border-gold relative">
+                        <div class="absolute top-4 right-4 bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full shadow-sm">WEBINAR 3</div>
+                        <div class="flex items-center gap-2 text-gold-light font-semibold mb-2 text-sm">
+                            <i data-lucide="calendar" class="h-4 w-4"></i> Monday, 20 July 2026
+                        </div>
+                        <div class="flex items-center gap-2 text-white text-xs mb-4">
+                            <i data-lucide="clock" class="h-4 w-4 text-gold"></i> 3:00 PM (VN) | 9:00 AM (UK)
+                        </div>
+                        <h4 class="text-lg font-bold text-white leading-tight">How Digital Twin based architectures and AI can make 6G a reality?</h4>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-start gap-4 mb-6 pb-6 border-b border-slate-100">
+                            <div class="w-12 h-12 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-navy font-bold text-xl overflow-hidden">
+                                <i data-lucide="user" class="h-6 w-6 text-slate-400"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-base text-navy">Dr. Antonino Masaracchia</h5>
+                                <p class="text-xs text-slate-500 font-medium mb-1">Queen Mary University of London</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-xs mb-6 flex-grow line-clamp-4">
+                            The deployment of next-generation 6G wireless networks is expected to push beyond the boundaries of current 5G systems by enabling innovative services. Artificial Intelligence (AI) and the Digital Twin (DT) paradigm have emerged as transformative technologies...
+                        </p>
+                        <div class="mt-auto pt-4 flex gap-3">
+                            <button data-modal-target="modal-webinar-3" class="flex-1 bg-navy/5 hover:bg-navy/10 text-navy border border-navy/20 py-2.5 rounded-lg font-bold text-xs transition-colors flex justify-center items-center gap-2 cursor-pointer">
+                                <i data-lucide="file-text" class="h-4 w-4"></i> Read More
                             </button>
                         </div>
                     </div>
@@ -617,14 +650,9 @@
                     <p class="text-slate-600 text-xs leading-relaxed mb-4">
                         Dr Hoa Nguyen is a Research Scientist in the Quantum Systems Team at CSIRO, Australia’s national science agency. His expertise lies at the intersection of quantum computing, artificial intelligence, and cloud computing, with research interests in quantum software engineering, quantum machine learning applications, and AI-driven optimisation for resource orchestration in distributed quantum computing systems. Hoa is developing quantum software systems for the National Quantum Computing Testbed (NQCT) in collaboration with the University of Queensland and quantum industry partners. He completed his PhD at the University of Melbourne, focusing on serverless and reinforcement learning-based resource management for quantum cloud computing, and holds bachelor's and master's degrees from the University of Information Technology, Vietnam National University (UIT-HCM). He has over eight years of teaching experience in Vietnam and Australia, and he works with national and international partners to advance scalable quantum computing architectures and software systems that support Australia’s growing quantum ecosystem.
                     </p>
-                    <div class="flex flex-col gap-3 mt-2">
-                        <a href="https://link.uit.edu.vn/vSRg2" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-navy text-white font-bold py-3 rounded-lg text-sm hover:bg-navy-light transition shadow-md">
-                            Register for Webinar
-                        </a>
                         <a href="https://hoaio.com/" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gold text-navy font-bold py-2 rounded-lg text-sm hover:bg-gold-hover transition">
                             Visit Author's Page
                         </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -679,6 +707,63 @@
                     <a href="https://sites.google.com/view/aryankaushik" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gold text-navy font-bold py-2 rounded-lg text-sm hover:bg-gold-hover transition mt-2">
                         Visit Author's Page
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Webinar 3 Modal -->
+    <div id="modal-webinar-3" class="modal-overlay fixed inset-0 z-[100] hidden items-center justify-center bg-navy/80 backdrop-blur-sm p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative shadow-2xl" onclick="event.stopPropagation();">
+            <!-- Header -->
+            <div class="sticky top-0 bg-white z-10 p-6 border-b border-slate-100 flex justify-between items-start">
+                <div class="pr-8">
+                    <div class="flex items-center gap-2 text-navy mb-2 text-sm font-bold bg-gold/20 inline-block px-3 py-1 rounded-full">
+                        <i data-lucide="calendar" class="h-4 w-4 inline"></i> July 20, 2026
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy leading-tight">How Digital Twin based architectures and AI can make 6G a reality? Potentialities, Applications and Challenges.</h3>
+                </div>
+                <button data-modal-close="modal-webinar-3" class="p-2 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-600 transition-colors flex-shrink-0 cursor-pointer">
+                    <i data-lucide="x" class="h-5 w-5 pointer-events-none"></i>
+                </button>
+            </div>
+            <!-- Body -->
+            <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="font-bold text-navy text-lg mb-3 flex items-center gap-2 border-b-2 border-gold pb-2 inline-flex">
+                            <i data-lucide="file-text" class="h-5 w-5 text-gold"></i> Abstract
+                        </h4>
+                        <p class="text-slate-700 leading-relaxed text-sm space-y-3">
+                            <span>The deployment of next-generation 6G wireless networks is expected to push beyond the boundaries of current 5G systems by enabling innovative services such as industrial automation, intelligent transportation, telemedicine, the Tactile Internet, Virtual and Augmented Reality (VR/AR), and the Metaverse. These technologies have the potential to significantly enhance many aspects of everyday life. However, realizing this vision will require meeting extremely demanding network requirements, including sub-millisecond communication latency, ultra-reliable transmissions, and data rates exceeding 100 Gb/s.</span>
+                            <br><br>
+                            <span>In addition, exceptionally high levels of spectrum and energy efficiency, together with ubiquitous connectivity, will be essential to support the massive deployment of Internet of Things (IoT) devices. In this context, Artificial Intelligence (AI) and the Digital Twin (DT) paradigm have emerged as transformative technologies capable of addressing the stringent requirements of future 6G services.</span>
+                            <br><br>
+                            <span>During this talk, we will discuss the potential of AI and DT, highlighting how their synergy can significantly contribute to the realization of next-generation 6G networks.</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Speaker Info Sidebar -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 h-fit">
+                    <h4 class="font-bold text-navy mb-4 border-b-2 border-gold pb-2 inline-block">Speaker Profile</h4>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white">
+                            <i data-lucide="user" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-navy">Dr. Antonino Masaracchia</p>
+                            <p class="text-xs text-slate-500 font-semibold">Queen Mary University of London</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-600 text-xs leading-relaxed mb-4 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
+                        Dr. Antonino Masaracchia (Senior Member, IEEE) is a Lecturer in Computer Science at Queen Mary University of London. He received the Ph.D. degree in electronics and telecommunications engineering from the University of Palermo, Italy, in 2016. His Ph.D. studies were conducted in joint supervision with the Institute of Informatics and Telematics (IIT), National Research Council (CNR), Pisa, Italy. The findings from his Ph.D. research made significant contributions to the IIT's involvement in the FP7 MOTO European Project. From September 2018 to August 2024, he conducted research activities as Research Fellow at the Centre for Wireless Innovation, Queens University Belfast, the UK’s largest research, development and exploitation base in physical layer wireless, and one of the strongest in Europe.
+                        <br><br>
+                        As part of the Communication Systems Research (CSR) Group at Queen Mary University of London, Dr. Masaracchia’s research primarily focuses on optimal resource allocation to enable Ultra-Reliable and Low-Latency Communication (URLLC) services for future 6G wireless networks. His research interests include Digital Twin-based solutions, AI/ML techniques for real-time optimization in wireless networks, UAV-based and RIS-assisted communications, and Semantic communications.
+                        <br><br>
+                        Dr. Masaracchia has authored or co-authored over 50+ books, book chapters, journal articles, and conference papers. He has also been invited as a keynote and tutorial speaker at various international conferences. Dr. Masaracchia received the Seal of Excellence for the project proposals UAV-SURE and UAV-DRESS, submitted under the Horizon 2020 Marie Skłodowska-Curie Actions (H2020-MSCA-IF-2020, September 2020) and Horizon Europe Marie Skłodowska-Curie Actions (HORIZON-MSCA-2021-PF-01-01 MSCA Postdoctoral Fellowships, October 2021), respectively. In both 2022 and 2023, he was recognized as an exemplary reviewer for IEEE Wireless Communications Letters. Additionally, he received the Best Paper Award at the IEEE IWCMC 2023 and EAI INISCOM 2024 conferences.
+                        <br><br>
+                        Dr. Masaracchia is currently serving as Area Editor for IEEE Communication Letters, EAI Endorsed Transactions on Tourism, Technology and Intelligence, as well as Guest Editor for EAI Endorsed Transactions on Industrial Networks and Intelligent Systems.
+                    </div>
                 </div>
             </div>
         </div>
